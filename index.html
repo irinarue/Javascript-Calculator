@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Taschenrechener</title>
+</head>
+<body>
+  <header>
+     <h1>Taschenrechner</h1>
+  </header>
+  <main>
+    <div id="calculator">
+        <div>
+            <div id="input"></div>
+            <div id="result"></div>
+        </div>
+        <div id="btns">
+            <table>
+                <tbody id="input-btns">
+                    <tr>
+                        <td id="clear" onclick="clearAll()">C</td>
+                        <td id="delete" onclick="deleteLast()"><=</td>
+                        <td class="zeichen" onclick='percentage()'>%</td>
+                        <td class="zeichen" onclick='addCalc("/")'>/</td>
+                    </tr>
+                    <tr>
+                        <td class="zahl" onclick='addToInput("7")'>7</td>
+                        <td class="zahl" onclick='addToInput("8")'>8</td>
+                        <td class="zahl" onclick='addToInput("9")'>9</td>
+                        <td class="zeichen" onclick='addCalc("*")'>x</td>
+                    </tr>
+                    <tr>
+                        <td class="zahl" onclick='addToInput("4")'>4</td>
+                        <td class="zahl" onclick='addToInput("5")'>5</td>
+                        <td class="zahl" onclick='addToInput("6")'>6</td>
+                        <td class="zeichen" onclick='addCalc("-")'>-</td>
+                    </tr>
+                    <tr>
+                        <td class="zahl" onclick='addToInput("1")'>1</td>
+                        <td class="zahl" onclick='addToInput("2")'>2</td>
+                        <td class="zahl" onclick='addToInput("3")'>3</td>
+                        <td class="zeichen" onclick='addCalc("+")'>+</td>
+                    </tr>
+                    <tr>
+                        <td onclick="plusMinus()">+/-</td>
+                        <td class="zahl" onclick='addToInput("0")'>0</td>
+                        <td onclick='addDot(".")'>.</td>
+                        <td id="equals" onclick="calculate()">=</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </main>
+    <script src="script.js"></script>
+</body>
+</html>

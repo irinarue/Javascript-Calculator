@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    margin: 0 auto;
+    padding: 0
+}
+
+html {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: burlywood;
+    font-family: fantasy;
+}
+
+header {
+    margin: 15px;
+}
+
+#calculator {
+    height: 250px;
+    width: 150px;
+    border: 3px double darkslategrey;
+    border-radius: 5px;
+    background: repeating-linear-gradient(-45deg,
+    rgb(190, 137, 67) 5%,
+    rgb(183, 123, 44) 15%,
+    rgb(150, 104, 45) 21%,
+    rgb(144, 108, 61) 27%,
+    rgb(183, 123, 44) 41%,
+    rgb(190, 137, 67) 45%);
+    box-shadow: 4px 4px 15px darkslategray;
+}
+
+#input{
+    height: 15px;
+    width: 90%;
+    padding: 2px;
+    margin: 5px auto;
+    font-size: 10px;
+    color:burlywood;
+    background: 
+    linear-gradient(
+        rgb(75, 75, 75),
+        rgb(125,125,155),
+        rgb(75, 75, 75));
+    border-radius: 2px;
+    border: 1px solid darkslategrey;
+    font-family: 'consolas';
+}
+
+#result{
+    height: 32px;
+    width: 90%;
+    margin: 5px auto;
+    padding: 2px;
+    font-size: 14px;
+    font-family: 'consolas';
+    background: linear-gradient(45deg, burlywood,rgb(181, 175, 130), burlywood, rgb(181, 175, 130), burlywood);
+    color:darkolivegreen;
+    border: 1px solid rgb(27, 51, 37);
+    box-shadow: 2px 2px 2px rgba(142, 118, 86, 0.603);
+    border-radius: 3px;
+    align-content: center;
+    overflow: hidden;
+}
+
+table {
+    width: 90%;
+    height: 90%;
+}
+
+td {
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background: radial-gradient(rgb(115, 114, 114), rgb(181, 175, 130));
+    color: burlywood;
+    text-shadow: 1px 1px 1px darkslategrey ;
+    border: 0.5px solid darkslategrey;
+}
+
+.zahl {
+    border: 1px solid gray;
+    color: sandybrown;
+}
+
+#clear{
+    color: rgb(122, 28, 28);
+}
+
+#delete {
+    color: rgb(186, 86, 86);
+}
+
+#equals {
+    color: rgb(89, 132, 16);
+}
